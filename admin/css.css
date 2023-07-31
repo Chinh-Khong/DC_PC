@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+
+.list_admin{
+    display: flex;
+}
+.list_admin  li{
+    list-style: none;
+    padding: 20px;
+    width: 50%;
+}
+.list_admin li a{
+    text-decoration: none;
+    /* display: block; */
+    font-weight: bold;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+    position: relative;
+}
+.list_admin li a::after{
+    content: "";
+    height: 5px;
+    width: 0px;
+    background: tomato;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+}
+.list_admin a:hover::after {
+    width: 100%;
+}
